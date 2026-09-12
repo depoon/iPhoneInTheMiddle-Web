@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="An iOS investigation, debugging, and testing tool for traffic you own or are authorized to test." />
+    <title>iPhone in the Middle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="iPhone in the Middle home"><span class="brand-mark">⌁</span> iPhone in the Middle</a>
+      <nav aria-label="Primary navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#boundaries">Boundaries</a>
+        <a href="#guide">Visual guide</a>
+      </nav>
+      <a class="header-link" href="https://github.com/depoon/iPhoneInTheMiddle">View source <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> iOS investigation toolkit</p>
+          <h1>See the traffic<br />you’re <em>allowed</em> to test.</h1>
+          <p class="lede">A learning-focused iOS tool for investigating, debugging, and testing traffic on devices, apps, accounts, and networks you own or are authorized to inspect.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/depoon/iPhoneInTheMiddle">Explore the project <span>→</span></a>
+            <a class="button quiet" href="#guide">See the app</a>
+          </div>
+          <p class="fine-print">For authorized testing only. Built with iOS platform limits in the open.</p>
+        </div>
+        <div class="hero-visual" aria-label="App dashboard screenshot">
+          <div class="signal one"></div><div class="signal two"></div><div class="signal three"></div>
+          <div class="phone-wrap"><img src="assets/dashboard.png" alt="iPhone in the Middle dashboard ready to start a test session" /></div>
+          <div class="annotation annotation-a"><i></i><strong>Test session</strong><small>Explicit proxy or local VPN</small></div>
+          <div class="annotation annotation-b"><i></i><strong>Clear status</strong><small>Know what’s running</small></div>
+        </div>
+      </section>
+
+      <section class="principle" id="boundaries">
+        <p class="eyebrow"><span></span> A deliberate boundary</p>
+        <div><h2>Useful observability<br />without pretending iOS<br /><em>has no limits.</em></h2>
+        <p>iPhone in the Middle makes the distinction visible: plain HTTP can be inspected; encrypted HTTPS connections remain metadata-only unless a test client deliberately trusts the local development certificate.</p></div>
+      </section>
+
+      <section class="capabilities" id="capabilities">
+        <div class="section-intro"><p class="eyebrow"><span></span> What it does today</p><h2>Tools for a careful<br />test session.</h2></div>
+        <div class="capability-grid">
+          <article><b>01</b><h3>Capture flows</h3><p>Record plain HTTP requests and HTTPS CONNECT tunnels, then inspect methods, status, timing, headers, and size.</p></article>
+          <article><b>02</b><h3>Guide setup</h3><p>Use the device setup flow, QR access, and separate web-server and proxy endpoints without guesswork.</p></article>
+          <article><b>03</b><h3>Test responses</h3><p>Create narrowly scoped local JSON response overrides for matching requests, without contacting an upstream service.</p></article>
+          <article><b>04</b><h3>Share safely</h3><p>Export filtered HAR files and proof reports with sensitive headers and common credential parameters redacted.</p></article>
+        </div>
+      </section>
+
+      <section class="gallery" id="guide">
+        <div class="gallery-heading"><div><p class="eyebrow"><span></span> The current experience</p><h2>A visual guide<br />from the real app.</h2></div><p>These are current simulator captures produced by the project’s UI test harness—not concept screens.</p></div>
+        <div class="screens">
+          <figure><img src="assets/device-setup.png" alt="Guided test-device setup in the app" /><figcaption>Set up a test device</figcaption></figure>
+          <figure class="featured"><img src="assets/flows.png" alt="Recorded traffic flows organized by domain" /><figcaption>Flows, grouped by domain</figcaption></figure>
+          <figure><img src="assets/tunnel.png" alt="Encrypted HTTPS tunnel displayed as metadata only" /><figcaption>Encrypted stays explicit</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="workflow"><p class="eyebrow"><span></span> More than an app</p><h2>Explore <span>→</span> Plan <span>→</span> Build <span>→</span> Verify</h2><p>This repository is also a learning lab for a disciplined, agentic engineering loop—small slices, repeatable checks, architecture review, and clear notes.</p></section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="brand-mark">⌁</span> iPhone in the Middle</a><p>Built for owned and authorized investigations.</p><a href="https://github.com/depoon/iPhoneInTheMiddle">GitHub <span>↗</span></a></footer>
+  </body>
+</html>
