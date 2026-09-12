@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Privacy policy for iPhone in the Middle." />
+    <title>Privacy policy · iPhone in the Middle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="policy-page">
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">⌁</span> iPhone in the Middle</a><a class="header-link" href="index.html">← Back to site</a></header>
+    <main class="policy">
+      <p class="eyebrow"><span></span> Privacy policy</p>
+      <h1>Your investigation data<br />is <em>yours.</em></h1>
+      <p class="policy-date">Effective September 13, 2026</p>
+      <div class="policy-intro">iPhone in the Middle is an iOS investigation, debugging, and testing tool. It is intended only for traffic on devices, apps, accounts, and networks you own or are authorized to test.</div>
+      <section><h2>What the app handles</h2><p>During a test session, the app can handle request metadata, headers, and other traffic content that a configured client sends through its proxy. This material may be sensitive. It is processed on your device to provide the app’s flow-inspection and debugging features.</p></section>
+      <section><h2>Local storage and sharing</h2><p>Captured flows and app settings are retained on the device for your use. You control when to clear flows or share an export. When you export a filtered HAR file, the app redacts sensitive header values and common credential query parameters before the file is shared. You remain responsible for reviewing exported files, copied commands, certificates, and logs before sharing them.</p></section>
+      <section><h2>Certificates and encrypted traffic</h2><p>For authorized HTTPS inspection experiments, the app can generate and serve a local development certificate authority. Installing and trusting that certificate is a deliberate action you control. The app shows HTTPS connections as encrypted metadata-only tunnels when decryption is not active for that flow.</p></section>
+      <section><h2>Optional feedback</h2><p>If you choose to send feedback, the app sends the details you provide—such as your name, email address, feedback text, app and device information, and any attachments—to the project’s feedback service. Attachments are stored in a private Google Drive folder and feedback metadata is recorded in a private Google Sheet for follow-up. Do not include passwords, authentication tokens, private keys, or other information you do not want to share.</p></section>
+      <section><h2>Retention and deletion</h2><p>You can remove locally retained flows through the app. Feedback records and attachments are kept only as needed to review and respond to the submission. To request deletion of feedback you sent, open an issue in the project repository with enough information to identify the submission without posting sensitive content.</p></section>
+      <section><h2>Changes and contact</h2><p>This policy may be updated as the app changes. The current version is published on this page. For a privacy question or deletion request, use the project’s <a href="https://github.com/depoon/iPhoneInTheMiddle/issues">GitHub issue tracker</a>. Do not post sensitive traffic, certificate material, credentials, or personal data in a public issue.</p></section>
+    </main>
+    <footer><a class="brand" href="index.html"><span class="brand-mark">⌁</span> iPhone in the Middle</a><p>Built for owned and authorized investigations.</p><a href="https://github.com/depoon/iPhoneInTheMiddle">GitHub <span>↗</span></a></footer>
+  </body>
+</html>
